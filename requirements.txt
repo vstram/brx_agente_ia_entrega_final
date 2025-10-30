@@ -1,0 +1,10 @@
+langchain
+langgraph
+langchain_openai
+pandas
+matplotlib
+seaborn
+python-dotenv
+tavily-python
+langchain-google-genai
+streamlit
