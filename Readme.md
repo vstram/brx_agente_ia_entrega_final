@@ -67,6 +67,9 @@
   Certifique-se de que seus arquivos CSV de notas fiscais estejam em um diretório chamado nf/ (ou nfe/, notas_fiscais/, notas/) na raiz do projeto. O
   agente irá procurá-los automaticamente.
 
+  ATENÇÃO: No repositório GIT, as notas fiscais que usamos estão ZIPADAS. Para usar o aplicativo,
+  é necessário descompacta-las!
+
   Exemplo de estrutura de diretórios:
 
    1 .
