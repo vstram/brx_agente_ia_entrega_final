@@ -57,6 +57,7 @@
 
   Exemplo de estrutura de diretórios:
 
+```text
    1 .
    2 ├── app.py
    3 ├── requirements.txt
@@ -65,6 +66,7 @@
    6 │   └── 202401_NFs_Itens.csv
    7 └── src/
    8     └── agent.py
+```
 
   6. Rodar a Aplicação Streamlit
 
