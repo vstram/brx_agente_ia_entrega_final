@@ -34,18 +34,7 @@
    1 git clone <URL_DO_SEU_REPOSITORIO>
    2 cd <nome_do_diretorio_do_projeto>
 
-  2. Criar e Ativar o Ambiente Virtual com `pyenv`
-
-  É altamente recomendável usar um ambiente virtual para isolar as dependências do projeto.
-
-   1 # Verifique as versões do Python disponíveis (opcional)
-   2 pyenv versions
-   3 
-   4 # Crie um novo ambiente virtual (usando Python 3.11.12 como exemplo)
-   5 pyenv virtualenv 3.11.12 langgraph-agent
-   6 
-   7 # Defina este ambiente como local para o projeto
-   8 pyenv local langgraph-agent
+  2. Recomendamos criar um ambiente virtual para instalar as bibliotecas python
 
   3. Instalar as Dependências
 
@@ -53,14 +42,10 @@
 
    1 pip install -r requirements.txt
 
-  4. Configurar as Chaves de API
 
-  Crie um arquivo chamado .env na raiz do diretório do projeto (o mesmo nível de app.py e requirements.txt) e adicione suas chaves de API:
-
-   1 GOOGLE_API_KEY="sua_chave_da_api_do_google_gemini_aqui"
-   2 TAVILY_API_KEY="sua_chave_da_api_da_tavily_aqui"
-
-  Importante: Mantenha este arquivo .env seguro e NUNCA o envie para repositórios públicos.
+  4. Criar chave api do Gemini e Tavily. 
+  
+  Essas chaves serão solicitadas pela aplicação streamlit.
 
   5. Preparar os Dados (Opcional)
 
@@ -75,12 +60,11 @@
    1 .
    2 ├── app.py
    3 ├── requirements.txt
-   4 ├── .env
-   5 ├── nf/
-   6 │   ├── 202401_NFs_Cabecalho.csv
-   7 │   └── 202401_NFs_Itens.csv
-   8 └── src/
-   9     └── agent.py
+   4 ├── nf/
+   5 │   ├── 202401_NFs_Cabecalho.csv
+   6 │   └── 202401_NFs_Itens.csv
+   7 └── src/
+   8     └── agent.py
 
   6. Rodar a Aplicação Streamlit
 
